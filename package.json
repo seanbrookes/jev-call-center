@@ -1,0 +1,37 @@
+{
+  "name": "jev-call-center",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/index.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run server\"",
+    "seed": "node server/seed.js",
+    "backfill-transcripts": "node server/backfill-transcripts.js",
+    "add-247-center": "node server/add-247-center.js",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@observablehq/plot": "^0.6.17",
+    "better-sqlite3": "^12.9.0",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pinia": "^3.0.3",
+    "three": "^0.186.1",
+    "tracery-grammar": "^2.8.4",
+    "vue": "^3.5.40",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.8",
+    "vite": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}
